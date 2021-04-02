@@ -46,7 +46,7 @@ class MainController: UIViewController {
         label.textColor = UIColor(hexString: "535A60")
         label.text = "How old are you?"
         label.sizeToFit()
-        label.x = 15
+        label.x = 20
         label.y = progressView.bottom + 30
         view.addSubview(label)
     }

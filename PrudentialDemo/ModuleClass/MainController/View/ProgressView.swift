@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-private let labelWidth: CGFloat = 50
+private let labelWidth: CGFloat = 60
 class ProgressView: UIView {
     // =================================================================
     //                          属性列表
