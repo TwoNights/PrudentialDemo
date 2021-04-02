@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45FA8E33490AC56AB8D52470 /* Pods_PrudentialDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA49721BB0012AC277AF7654 /* Pods_PrudentialDemo.framework */; };
 		668944762616B26900BA91AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668944752616B26900BA91AD /* AppDelegate.swift */; };
 		6689448D2616B26B00BA91AD /* PrudentialDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6689448C2616B26B00BA91AD /* PrudentialDemoTests.swift */; };
 		668944982616B26B00BA91AD /* PrudentialDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668944972616B26B00BA91AD /* PrudentialDemoUITests.swift */; };
 		668944C22616B4EA00BA91AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 668944C12616B4EA00BA91AD /* Assets.xcassets */; };
 		668944C72616B4FE00BA91AD /* DeviceSizeHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668944C62616B4FE00BA91AD /* DeviceSizeHeader.swift */; };
+		668944EF2616EB1700BA91AD /* RulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668944EE2616EB1700BA91AD /* RulerView.swift */; };
+		668944F52616EB4900BA91AD /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668944F32616EB4800BA91AD /* UIViewExtensions.swift */; };
+		668944F62616EB4900BA91AD /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668944F42616EB4800BA91AD /* UIColorExtensions.swift */; };
 		CEA106482616BB3D005820AE /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA106472616BB3D005820AE /* MainController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4E7CB425B61ED9E5A6C42B81 /* Pods-PrudentialDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrudentialDemo.release.xcconfig"; path = "Target Support Files/Pods-PrudentialDemo/Pods-PrudentialDemo.release.xcconfig"; sourceTree = "<group>"; };
 		668944722616B26900BA91AD /* PrudentialDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrudentialDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		668944752616B26900BA91AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		668944832616B26B00BA91AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,7 +49,12 @@
 		668944992616B26B00BA91AD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		668944C12616B4EA00BA91AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Resource/Assets.xcassets; sourceTree = "<group>"; };
 		668944C62616B4FE00BA91AD /* DeviceSizeHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DeviceSizeHeader.swift; path = CommonHeader/DeviceSizeHeader.swift; sourceTree = "<group>"; };
+		668944EE2616EB1700BA91AD /* RulerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RulerView.swift; path = ModuleClass/MainController/View/RulerView.swift; sourceTree = "<group>"; };
+		668944F32616EB4800BA91AD /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = Utills/UIkitExtend/UIViewExtensions.swift; sourceTree = "<group>"; };
+		668944F42616EB4800BA91AD /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = Utills/UIkitExtend/UIColorExtensions.swift; sourceTree = "<group>"; };
+		9DEAE043A1D6A81D19E9EA1B /* Pods-PrudentialDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrudentialDemo.debug.xcconfig"; path = "Target Support Files/Pods-PrudentialDemo/Pods-PrudentialDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CEA106472616BB3D005820AE /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainController.swift; path = ModuleClass/MainController/Controller/MainController.swift; sourceTree = "<group>"; };
+		EA49721BB0012AC277AF7654 /* Pods_PrudentialDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrudentialDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45FA8E33490AC56AB8D52470 /* Pods_PrudentialDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +83,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3DCD1FCC8C1CC2C0A9568128 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EA49721BB0012AC277AF7654 /* Pods_PrudentialDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		492672A95D22F78688B4FB8E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9DEAE043A1D6A81D19E9EA1B /* Pods-PrudentialDemo.debug.xcconfig */,
+				4E7CB425B61ED9E5A6C42B81 /* Pods-PrudentialDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		668944692616B26900BA91AD = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +107,8 @@
 				6689448B2616B26B00BA91AD /* PrudentialDemoTests */,
 				668944962616B26B00BA91AD /* PrudentialDemoUITests */,
 				668944732616B26900BA91AD /* Products */,
+				492672A95D22F78688B4FB8E /* Pods */,
+				3DCD1FCC8C1CC2C0A9568128 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +164,7 @@
 		668944BC2616B3F900BA91AD /* Utills(工具类) */ = {
 			isa = PBXGroup;
 			children = (
+				668944ED2616EAB800BA91AD /* UIkitExtend(UIkit拓展) */,
 			);
 			name = "Utills(工具类)";
 			sourceTree = "<group>";
@@ -158,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				668944DF2616B5F100BA91AD /* Controller */,
+				668944EC2616EAAA00BA91AD /* View */,
 			);
 			name = "MainController(主页面)";
 			sourceTree = "<group>";
@@ -170,6 +202,23 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		668944EC2616EAAA00BA91AD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				668944EE2616EB1700BA91AD /* RulerView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		668944ED2616EAB800BA91AD /* UIkitExtend(UIkit拓展) */ = {
+			isa = PBXGroup;
+			children = (
+				668944F42616EB4800BA91AD /* UIColorExtensions.swift */,
+				668944F32616EB4800BA91AD /* UIViewExtensions.swift */,
+			);
+			name = "UIkitExtend(UIkit拓展)";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6689449C2616B26B00BA91AD /* Build configuration list for PBXNativeTarget "PrudentialDemo" */;
 			buildPhases = (
+				F8296DCE7222951FB994C371 /* [CP] Check Pods Manifest.lock */,
 				6689446E2616B26900BA91AD /* Sources */,
 				6689446F2616B26900BA91AD /* Frameworks */,
 				668944702616B26900BA91AD /* Resources */,
+				668945022616F39D00BA91AD /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -293,14 +344,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		668945022616F39D00BA91AD /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		F8296DCE7222951FB994C371 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PrudentialDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6689446E2616B26900BA91AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				668944762616B26900BA91AD /* AppDelegate.swift in Sources */,
+				668944F52616EB4900BA91AD /* UIViewExtensions.swift in Sources */,
 				668944C72616B4FE00BA91AD /* DeviceSizeHeader.swift in Sources */,
+				668944F62616EB4900BA91AD /* UIColorExtensions.swift in Sources */,
 				CEA106482616BB3D005820AE /* MainController.swift in Sources */,
+				668944EF2616EB1700BA91AD /* RulerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +551,7 @@
 		};
 		6689449D2616B26B00BA91AD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9DEAE043A1D6A81D19E9EA1B /* Pods-PrudentialDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -474,6 +572,7 @@
 		};
 		6689449E2616B26B00BA91AD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E7CB425B61ED9E5A6C42B81 /* Pods-PrudentialDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
