@@ -16,6 +16,7 @@
 		668944EF2616EB1700BA91AD /* RulerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668944EE2616EB1700BA91AD /* RulerView.swift */; };
 		668944F52616EB4900BA91AD /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668944F32616EB4800BA91AD /* UIViewExtensions.swift */; };
 		668944F62616EB4900BA91AD /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668944F42616EB4800BA91AD /* UIColorExtensions.swift */; };
+		668945072616FB0F00BA91AD /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668945062616FB0F00BA91AD /* ProgressView.swift */; };
 		CEA106482616BB3D005820AE /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA106472616BB3D005820AE /* MainController.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		668944EE2616EB1700BA91AD /* RulerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RulerView.swift; path = ModuleClass/MainController/View/RulerView.swift; sourceTree = "<group>"; };
 		668944F32616EB4800BA91AD /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtensions.swift; path = Utills/UIkitExtend/UIViewExtensions.swift; sourceTree = "<group>"; };
 		668944F42616EB4800BA91AD /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIColorExtensions.swift; path = Utills/UIkitExtend/UIColorExtensions.swift; sourceTree = "<group>"; };
+		668945062616FB0F00BA91AD /* ProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProgressView.swift; path = ModuleClass/MainController/View/ProgressView.swift; sourceTree = "<group>"; };
 		9DEAE043A1D6A81D19E9EA1B /* Pods-PrudentialDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrudentialDemo.debug.xcconfig"; path = "Target Support Files/Pods-PrudentialDemo/Pods-PrudentialDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CEA106472616BB3D005820AE /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainController.swift; path = ModuleClass/MainController/Controller/MainController.swift; sourceTree = "<group>"; };
 		EA49721BB0012AC277AF7654 /* Pods_PrudentialDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PrudentialDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,6 +207,7 @@
 		668944EC2616EAAA00BA91AD /* View */ = {
 			isa = PBXGroup;
 			children = (
+				668945062616FB0F00BA91AD /* ProgressView.swift */,
 				668944EE2616EB1700BA91AD /* RulerView.swift */,
 			);
 			name = View;
@@ -396,6 +399,7 @@
 				668944F52616EB4900BA91AD /* UIViewExtensions.swift in Sources */,
 				668944C72616B4FE00BA91AD /* DeviceSizeHeader.swift in Sources */,
 				668944F62616EB4900BA91AD /* UIColorExtensions.swift in Sources */,
+				668945072616FB0F00BA91AD /* ProgressView.swift in Sources */,
 				CEA106482616BB3D005820AE /* MainController.swift in Sources */,
 				668944EF2616EB1700BA91AD /* RulerView.swift in Sources */,
 			);

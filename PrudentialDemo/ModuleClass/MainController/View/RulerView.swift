@@ -14,7 +14,7 @@ struct RulerViewConfig {
     // 取值配置
     var min: Int = 18                                               // 最小值
     var max: Int = 128                                              // 最大值
-    var deafault: Int = 25                                          // 默认选中值
+    var deafault: Int = 30                                          // 默认选中值
     // circle配置
     var circleRadius: CGFloat = 50                                  // 圆形半径
     var cricleColor: UIColor = UIColor(hexString: "ECF4FB")         // 圆形颜色

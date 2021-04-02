@@ -30,7 +30,42 @@ class MainController: UIViewController {
     // MARK: - 私有方法
     /// UI配置
     private func configUI() {
+        addHeaderView()
+        addBottomButton()
         view.addSubview(rulerView)
         view.backgroundColor = .white
+    }
+    /// 添加头部视图
+    private func addHeaderView() {
+        // progressView
+        let progressView = ProgressView(current: 1, total: 8, frame: CGRect(x: 0, y: statusBarHeight, width: screenWidth, height: 30))
+        view.addSubview(progressView)
+        // label
+        let label = UILabel()
+        label.font = UIFont.boldSystemFont(ofSize: 32)
+        label.textColor = UIColor(hexString: "535A60")
+        label.text = "How old are you?"
+        label.sizeToFit()
+        label.x = 15
+        label.y = progressView.bottom + 30
+        view.addSubview(label)
+    }
+    /// 添加底部按钮
+    private func addBottomButton() {
+        let sideMargin: CGFloat = 45
+        let bottomMargin: CGFloat = CGFloat(safeBottomHeight + 30)
+        let buttonHeight: CGFloat = 60
+        let buttonWidth = screenWidth - 2 * sideMargin
+        let button = UIButton(frame: CGRect(x: sideMargin, y: view.height - bottomMargin - buttonHeight, width: buttonWidth, height: buttonHeight))
+        button.backgroundColor = UIColor(hexString: "7BCCD6")
+        button.setTitle("Continue", for: .normal)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 24)
+        button.roundCorners(radius: buttonHeight * 0.5)
+        button.addTarget(self, action: #selector(bottomButtonClick), for: .touchUpInside)
+        view.addSubview(button)
+    }
+    /// 底部按钮点击事件
+    @objc private func bottomButtonClick() {
+        print(rulerView.getCurrentNum())
     }
 }
