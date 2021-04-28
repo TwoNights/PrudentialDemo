@@ -16,6 +16,15 @@ class MainController: UIViewController {
         rulerView.centerY = view.height * 0.5 + 30
         return rulerView
     }()
+    /// 点击展示的Label
+    private lazy var showLabel: UILabel = {
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 40))
+        label.textAlignment = .center
+        label.font = UIFont.boldSystemFont(ofSize: 20)
+        label.textColor = UIColor(hexString: "535A60")
+        label.alpha = 0
+        return label
+    }()
     // =================================================================
     //                          生命周期
     // =================================================================
@@ -63,9 +72,18 @@ class MainController: UIViewController {
         button.roundCorners(radius: buttonHeight * 0.5)
         button.addTarget(self, action: #selector(bottomButtonClick), for: .touchUpInside)
         view.addSubview(button)
+        showLabel.y = button.y - 15 - showLabel.height
+        view.addSubview(showLabel)
     }
     /// 底部按钮点击事件
     @objc private func bottomButtonClick() {
-        print(rulerView.getCurrentNum())
+        self.showLabel.text = "Currently selected:\(rulerView.getCurrentNum())"
+        UIView.animate(withDuration: 0.5) {
+            self.showLabel.alpha = 1
+        } completion: { (_) in
+            UIView.animate(withDuration: 2) {
+                self.showLabel.alpha = 0
+            }
+        }
     }
 }
